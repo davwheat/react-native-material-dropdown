@@ -300,7 +300,7 @@ export default class Dropdown extends PureComponent {
                         .timing(opacity, {
                             duration: animationDuration,
                             toValue: 1,
-                            useNativeDriver,
+                            useNativeDriver: true,
                         })
                         .start(() => {
                             if (this.mounted && 'ios' === Platform.OS) {
